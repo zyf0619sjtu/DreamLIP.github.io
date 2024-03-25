@@ -54,7 +54,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>自适应图像</title>
+    <title>adaptive image</title>
     <style>
         .responsive-image {
             width: 50%; /* 或者你可以使用100%如果你想要图像宽度充满容器 */
@@ -66,7 +66,6 @@
         }
     </style>
 </head>
-<body>
 
 <section class="hero">
   <div class="hero-body">
@@ -76,9 +75,9 @@
           <h1 class="title is-2 publication-title">DreamLIP: Language-Image Pre-training with Long Captions</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Kecheng Zheng</a><sup>1,2</sup>,</span>
+              <a href="https://keunhong.com">Kecheng Zheng</a><sup>*1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://github.com/zyf0619sjtu">Yifei Zhang</a><sup>3</sup>,</span>
+              <a href="https://github.com/zyf0619sjtu">Yifei Zhang</a><sup>*3</sup>,</span>
             <span class="author-block">
               <a href="https://github.com/wuw2019">Wei Wu</a><sup>4</sup>,
             </span>
@@ -101,10 +100,10 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Zhejiang University,</span>
-            <span class="author-block"><sup>2</sup>Ant Group</span>
-            <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University</span>
-            <span class="author-block"><sup>4</sup>University of Science and Technology of China</span>
-            <span class="author-block"><sup>5</sup>Eastern Institute of Technology</span>
+            <span class="author-block"><sup>2</sup>Ant Group,</span>
+            <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University,</span>
+            <span class="author-block"><sup>4</sup>University of Science and Technology of China,</span>
+            <span class="author-block"><sup>5</sup>Eastern Institute of Technology,</span>
             <span class="author-block"><sup>6</sup>Northeastern University</span>
           </div>
 
@@ -129,19 +128,8 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fab fa-youtube"></i>-->
-<!--                  </span>-->
-<!--                  <span>Video</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/zyf0619sjtu/DreamLIP"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -151,15 +139,15 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <a href="https://github.com/zyf0619sjtu/DreamLIP"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
                   </a>
+              </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -167,8 +155,18 @@
   </div>
 </section>
 
-<!--static/images/moti.png-->
-
+<section class="hero teaser">
+  <div class="subtitle has-text-centered">
+    <div class="hero-body">
+      <img src='static/images/moti.png' width="1024" height="880",id="teaser-1">
+      <h2 class="subtitle has-text-centered">
+<!--        <p>-->
+<!--          <b>Concept diagrams</b> of generated long caption, image-text retrival, semantic segmentation and image understanding in MLLM.-->
+<!--        </p>-->
+      </h2>
+    </div>
+  </div>
+</section>
 
 
 <section class="section">
@@ -192,12 +190,46 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-
+  </div>
+  <!--/ Abstract. -->
 </section>
 
-
+<section class="section pipeline-section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Pipeline</h2>
+        <img src="static/images/pipeline.jpg" width="960" height="660">
+    </div>
+  </div>
+</section>
+<section class="section experiment-section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Experiments</h2>
+        <img src="static/images/results.jpg" width="1560" height="660">
+          <p>
+          </p>
+        <img src="static/images/vis_seg_retr_1.png" width="1560" height="660">
+        <h2 class="subtitle has-text-centered">
+          <p>
+            <b>Visualization of semantic segmentation and image-text retrieval. </b>
+          </p>
+        </h2>
+        <img src="static/images/stat.png" width="1280" height="660">
+        <h2 class="subtitle has-text-centered">
+          <p>
+            <b>Statistics of long captions. </b>
+          </p>
+        </h2>
+<!--        <img src="static/images/visualization_attention.png"  width="960" height="660">-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          <p>-->
+<!--            <b>Visualization for Attention Map. </b>-->
+<!--          </p>-->
+<!--        </h2>-->
+    </div>
+  </div>
+</section>
 
 
 <section class="section" id="BibTeX">
